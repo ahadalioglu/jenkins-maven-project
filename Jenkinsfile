@@ -15,6 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'mvn -f hello-app/pom.xml test'
+                echo 'TEST is don successfully...'
             }
             post {
                 always {
